@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative h2.right {
+            position: relative;
+            left: 20px;
+        }
+
+        div.relative h2.left {
+            /* 定位相对于不偏移的自己 */
+            position: relative;
+            left: -20px;
+        }
+
+        h2.absolute {
+            /* 定位相对于上级父元素，若没有则相对于html */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        h2.fixed {
+            position: fixed;
+            top: 30%;
+            right: 5px;
+        }
+
+        h2.sticky {
+            /* edge不支持？ */
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">
+        该元素使用了 position: static
+    </div>
+    <div class="relative">
+        <h2>正常位置</h2>
+        <h2 class="right">相对右移</h2>
+        <h2 class="left">相对左移</h2>
+    </div>
+    <h2 class="absolute">
+        该元素使用了绝对定位
+    </h2>
+
+    <h2 class="fixed">该元素使用了fixed定位</h2>
+    <div>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+        <p>用来撑内容</p>
+    </div>
+
+    <h2 class="sticky">该元素使用粘性定位</h2>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: aqua;
+            width: 300px;
+            height: 50px;
+            /* 等效：
+            border-width:25px;
+            border-style: solid;
+            border-color:yellow */
+            border: 25px solid yellow;
+            padding: 25px;
+            /* 等效：
+            margin-top: 25px;
+            margin-bottom:25px;
+            margin-right:25px;
+            margin-left:25px; */
+            margin: 25px;
+            /* overflow加auto自动添加滚动条 */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Margin(外边距) - 清除边框外的区域，外边距是透明的。
+         Border(边框) - 围绕在内边距和内容外的边框。
+         Padding(内边距) - 清除内容周围的区域，内边距是透明的。
+         Content(内容) - 盒子的内容，显示文本和图像。-->
+    <img src="./image.png" alt="box">
+
+    <h2>盒子示例</h2>
+    <div>
+        这里是盒子内的实际内容。有 25px 内间距，25px 外间距、25px
+        绿色边框。撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容撑内容
+    </div>
+</body>
+
+</html>
