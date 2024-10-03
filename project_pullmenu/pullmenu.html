@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.dropdown {
+            width: 80px;
+        }
+        div.content{
+            position: absolute;
+              display: none;   
+            width: 80px;
+            height: 100px;
+          line-height: 33px;
+            list-style-type: none;
+            /* border: 1px solid black; */
+            padding: 0;
+            margin: 0;
+        }
+
+        button.dropbtn {
+            
+            font-size: medium;
+            color: white;
+            background-color: rgb(34, 160, 97);
+            width: 80px;
+            border:0px;
+            /* 手形图标 */
+            cursor: pointer;
+
+        }
+
+        button.dropbtn:hover {
+            
+            background-color: rgb(33, 138, 86);
+
+        }
+        /* 注意不能是.dropbtn */
+        .dropdown:hover .content {
+            
+            display:block;
+
+        }
+
+        a {
+
+            display: block;
+            float: left;
+            width:80px;
+            text-decoration: none;
+            background-color: #f9f9f9;;
+            color: #000;
+            /* border: 1px solid black; */
+            font-size: medium;
+            text-align: center;
+           
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+        }
+        a:hover{
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">下拉菜单</button>
+        <div class="content">
+            <a href="#">菜鸟教程1</a>
+            <a href="#">菜鸟教程2</a>
+            <a href="#">菜鸟教程3</a>
+        </div>
+    </div>
+</body>
+
+</html>
